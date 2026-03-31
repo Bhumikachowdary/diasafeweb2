@@ -11,6 +11,13 @@ import ReportsScreen from './pages/ReportsScreen';
 import ProfileScreen from './pages/ProfileScreen';
 import DetailedReportScreen from './pages/DetailedReportScreen';
 import FinalReportScreen from './pages/FinalReportScreen';
+import SplashScreen from './pages/SplashScreen';
+import ProteinRegulationScreen from './pages/ProteinRegulationScreen';
+import TargetedOrgansScreen from './pages/TargetedOrgansScreen';
+import SideEffectsScreen from './pages/SideEffectsScreen';
+import DosageConcentrationScreen from './pages/DosageConcentrationScreen';
+import OnboardingScreen from './pages/OnboardingScreen';
+import DrawingScreen from './pages/DrawingScreen';
 import './index.css';
 
 function App() {
@@ -18,7 +25,7 @@ function App() {
     <Router>
       <div className="app-container">
         <Routes>
-          <Route path="/" element={<Navigate to="/login" replace />} />
+          <Route path="/" element={<SplashScreen />} />
           <Route path="/login" element={<LoginScreen />} />
           <Route path="/forgot-password" element={<ForgotPasswordScreen />} />
           <Route path="/verify-otp" element={<VerifyOTPScreen />} />
@@ -30,6 +37,12 @@ function App() {
           <Route path="/profile" element={<ProfileScreen />} />
           <Route path="/detailed-report" element={<DetailedReportScreen />} />
           <Route path="/final-report" element={<FinalReportScreen />} />
+          <Route path="/protein-regulation" element={<ProteinRegulationScreen />} />
+          <Route path="/targeted-organs" element={<TargetedOrgansScreen />} />
+          <Route path="/side-effects" element={<SideEffectsScreen />} />
+          <Route path="/dosage-concentration" element={<DosageConcentrationScreen />} />
+          <Route path="/onboarding" element={<OnboardingScreen />} />
+          <Route path="/draw" element={<DrawingScreen />} />
         </Routes>
       </div>
     </Router>

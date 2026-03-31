@@ -135,11 +135,11 @@ const DetailedReportScreen = () => {
 
                 {/* Next Button */}
                 <button 
-                  onClick={() => navigate('/final-report', { state: { result: data } })}
+                  onClick={() => navigate('/protein-regulation', { state: { result: data } })}
                   className="primary-btn" 
                   style={{ marginBottom: 40 }}
                 >
-                    <span>Next: Final Report</span>
+                    <span>Next: Protein Analysis</span>
                     <ArrowRight size={20} />
                 </button>
             </div>
