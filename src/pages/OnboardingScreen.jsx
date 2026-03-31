@@ -55,6 +55,7 @@ const OnboardingScreen = () => {
       setCurrentPage(currentPage + 1);
     } else {
       localStorage.setItem('onboarded', 'true');
+      localStorage.removeItem('token');
       navigate('/login');
     }
   };
@@ -67,6 +68,7 @@ const OnboardingScreen = () => {
 
   const skipOnboarding = () => {
     localStorage.setItem('onboarded', 'true');
+    localStorage.removeItem('token');
     navigate('/login');
   };
 
