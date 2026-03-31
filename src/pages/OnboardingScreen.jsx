@@ -54,6 +54,8 @@ const OnboardingScreen = () => {
     if (currentPage < onboardingData.length - 1) {
       setCurrentPage(currentPage + 1);
     } else {
+      console.log("Onboarding complete, navigating to /login");
+      window.alert("Onboarding complete! Moving to Login screen...");
       localStorage.setItem('onboarded', 'true');
       localStorage.removeItem('token');
       navigate('/login');
